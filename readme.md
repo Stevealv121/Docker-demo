@@ -32,5 +32,26 @@ see file mongo.yaml
 ## Commands
 
 ```
-docker-compose -f monfo.yaml up
+docker-compose -f mongo.yaml up
 ``` 
+
+# Creating a docker image
+
+## command
+
+```
+docker build -t simplejs:1.0 .
+```
+
+## essential files
+
+copy essential file to a directory called app
+
+## running on same net
+
+```
+docker run -d `
+ -p 3000:3000 `
+ --net docker-demo_default `
+ simplejs:1.0
+```
