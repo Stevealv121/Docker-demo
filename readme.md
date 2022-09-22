@@ -25,3 +25,12 @@ docker run -d `
 -e ME_CONFIG_MONGODB_ADMINPASSWORD=password `
 mongo-express
 
+# Docker compose example
+
+see file mongo.yaml
+
+## Commands
+
+```
+docker-compose -f monfo.yaml up
+``` 
