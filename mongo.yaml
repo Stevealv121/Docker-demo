@@ -1,5 +1,9 @@
 version: '3'
 services:
+  simplejs:
+    image: 687567459343.dkr.ecr.us-east-1.amazonaws.com/simplejs:1.0.1
+    ports:
+      - 3000:3000
   mongodb:
     image: mongo
     ports:
